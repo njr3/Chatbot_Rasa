@@ -1,0 +1,44 @@
+{
+  "meeting": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 12
+  },
+  "country": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "occurence": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "Organisation": {
+    "precision": 0.9873417721518988,
+    "recall": 0.9873417721518988,
+    "f1-score": 0.9873417721518988,
+    "support": 79
+  },
+  "micro avg": {
+    "precision": 0.9761904761904762,
+    "recall": 0.8817204301075269,
+    "f1-score": 0.9265536723163842,
+    "support": 93
+  },
+  "macro avg": {
+    "precision": 0.49683544303797467,
+    "recall": 0.33016877637130804,
+    "f1-score": 0.37183544303797467,
+    "support": 93
+  },
+  "weighted avg": {
+    "precision": 0.967741935483871,
+    "recall": 0.8817204301075269,
+    "f1-score": 0.9032258064516129,
+    "support": 93
+  }
+}

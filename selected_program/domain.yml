@@ -1,0 +1,150 @@
+
+intents:
+- greet
+- affirm
+- data
+- query_offeerdocument1_organisation
+- query_invest_organisation
+- query_attend_per_organisation
+- query_services_organisation
+- query_economic
+- query_infoattend_organisation
+- query_document1_organisation
+- query_organisation
+- query_helping
+- bye
+- location
+- occurence
+- query_document2_organisation
+- query_location_organisation
+- query_join_organisation
+- query_attend_organisation
+- query_support
+- query_list_organisation
+
+
+entities:
+- data
+- occurence
+- person
+- meeting
+- country
+- Organisation
+- document
+
+
+actions:
+- utter_greet
+- utter_action_query_organisation
+- utter_action_query_attend_per_organisation
+- utter_action_query_attend_organisation
+- utter_action_query_infoattend_organisation
+- utter_action_query_join_organisation
+- utter_action_query_list_organisation 
+- utter_action_query_services_organisation
+- utter_action_query_location_organisation
+- utter_action_query_document1_organisation
+- utter_action_query_document2_organisation
+- utter_action_query_offeerdocument1_organisation
+- utter_action_query_invest_organisation 
+- utter_action_query_economic
+- utter_action_query_support
+- utter_bye
+- utter_affirm
+- utter_default
+- __main__.ApiAction
+
+slots:
+  Organisation:
+    type: categorical
+    values:
+        - Chamber of commerce
+        - chambre de commerce
+        - CCIMA
+        - ccima
+        - CCIMC
+        - ccimc
+        - Cameroon chamber of commerce
+        - Chamber of Commerce,Industry, Mines and Crafts
+  country:
+    type: categorical
+    values:
+        - Cameroon
+        - cameroon
+  meeting:
+    type: categorical
+    values:
+        - meeting
+        - gathering
+        - conference
+        - congregation
+        - convocation
+        - conclave
+        - convention
+        - summit
+        - forum
+        - conference
+        - gathering
+  document:
+    type: categorical
+    values:
+        - Certificate of origin
+        - certificate of origin
+        - Consular file
+        - consular file     
+  person:
+    type: categorical
+    values:
+        - investors
+  occurence:
+    type: categorical
+    values:
+        - events
+        - contest
+        - affair
+        - business
+        - occassion
+        - occurence
+  data:
+    type: categorical
+    values:
+        - information
+        
+
+templates:
+  utter_greet:
+  - text: Hello,I am the AIMS-bot how may I help You 
+  utter_action_query_organisation:
+  - text: The chamber of commerce, industries, mining and crafting is a national consultative and representative body at the national services of the entire Cameroon enterprises sector. The Chamber represents and promotes members of the organization. It identifies community problems and issues affecting businesses and provides leadership to solve these problems. In this way, the Chamber accomplishes collectively what no business can do alone.
+  utter_action_query_attend_per_organisation:
+  - text: Anyone who is employed by a member company is eligible to attend Chamber events at member discount prices. Our events are also open to the general public for a non-member rate   
+  utter_action_query_attend_organisation:
+  - text: Anyone who is employed by a member company is eligible to attend Chamber events at member discount prices. Our events are also open to the general public for a non-member rate 
+  utter_action_query_infoattend_organisation:
+  - text: it is possible to information through the chamber of commerce website WWW.ccima.cm and if you are already register for the event you will be notified by email or through call      
+  utter_action_query_join_organisation:
+  - text: Any business institution can join the chamber of commerce, to so you have be register to their membership through the consular file       
+  utter_action_query_list_organisation:
+  - text: To get the list of the business at the chamber of commerce and what they do you have to the chamber of commerce"
+  utter_action_query_services_organisation:
+  - text: They offer may services.such as vocational training, economic information, support for companies, promotion and conquest of the markets, orga- nization of trade fairs, auction sales of discarded goods, opinion on draft laws and regulations relating to commercial economic activities, creation, regulation, opera- tion or abolition of stock and trade exchanges, issuance of the certificate of origin.
+  utter_action_query_location_organisation:
+  - text: The Chamber of commerce is lacated at Bonanjo in Douala and have a delegation in all the region of Cameroon
+  utter_action_query_document1_organisation:
+  - text: To have every information o the consular file use the link http://www.ccima.cm/index.php/espace-entreprises/le-fichier-consulaire
+  utter_action_query_document2_organisation:
+  - text: it is a document certifying that the goods in an export shipment in particular,are wholly obtained, produced, manufactured or processed in a country, or it is a document that identifies a good    through a country or group of countries that has contributed to its transformation into a finished p0roduct.
+  utter_action_query_offeerdocument1_organisation:
+  - text: The chamber of commerce in charge of offering certifcate of origin and can be done also online
+  utter_action_query_economic:
+  - text: This is an information is got through the website of the CCIMA-www.ccima.cm
+  utter_action_query_support:
+  - text: The chamber of commerce can support people who want to creat their industry
+  utter_action_query_invest_organisation:
+  - text: In order to access the investor opportunities http://www.ccima.cm/index.php/investir-au-cameroun/les-opportunites-d-investissement
+  utter_affirm:
+  - text: You're welcome
+  utter_bye:
+  - text: Good bye I hope I have been of great help
+  utter_default:
+  - text:  for more information contact nteupejoelrostand@gmail.com 

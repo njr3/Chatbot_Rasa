@@ -1,0 +1,166 @@
+[
+  {
+    "text": "How can I get  Cameroon chamber’s of commerce event's?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "Cameroon",
+        "entity": "country"
+      },
+      {
+        "start": 24,
+        "end": 45,
+        "value": "chamber’s of commerce",
+        "entity": "Organisation"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 15,
+        "end": 45,
+        "value": "Cameroon chamber’s of commerce",
+        "entity": "Organisation",
+        "confidence": 0.9587407727674991,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How can I obtain information about the conference",
+    "entities": [
+      {
+        "start": 39,
+        "end": 49,
+        "value": "conference",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming events",
+    "entities": [
+      {
+        "start": 44,
+        "end": 50,
+        "value": "events",
+        "entity": "occurence"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming conclave",
+    "entities": [
+      {
+        "start": 44,
+        "end": 52,
+        "value": "conclave",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming forum",
+    "entities": [
+      {
+        "start": 44,
+        "end": 49,
+        "value": "forum",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How do I get information about the coming gathering",
+    "entities": [
+      {
+        "start": 42,
+        "end": 51,
+        "value": "gathering",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming summit",
+    "entities": [
+      {
+        "start": 44,
+        "end": 50,
+        "value": "summit",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming congregation, please",
+    "entities": [
+      {
+        "start": 44,
+        "end": 56,
+        "value": "congregation",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How to I get information about the upcoming meeting",
+    "entities": [
+      {
+        "start": 44,
+        "end": 51,
+        "value": "meeting",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How do I get information about the next meeting",
+    "entities": [
+      {
+        "start": 40,
+        "end": 47,
+        "value": "meeting",
+        "entity": "meeting"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can I get Cameroon chamber’s of commerce event's?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 44,
+        "value": "Cameroon chamber’s of commerce",
+        "entity": "Organisation"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 14,
+        "end": 22,
+        "value": "Cameroon",
+        "entity": "country",
+        "confidence": 0.5792261841508548,
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "start": 23,
+        "end": 44,
+        "value": "chamber’s of commerce",
+        "entity": "Organisation",
+        "confidence": 0.9639249169806837,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

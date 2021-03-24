@@ -1,0 +1,32 @@
+
+
+language: "en"
+
+pipeline:
+- name: "WhitespaceTokenizer"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "CountVectorsFeaturizer"
+- name: "CountVectorsFeaturizer"
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: "EmbeddingIntentClassifier"
+
+
+
+
+
+policies:
+- name: KerasPolicy
+  epochs: 100
+  max_history: 3
+- name: MemoizationPolicy
+  max_history: 3
+- name: FallbackPolicy
+  nlu_threshold: 0.1
+  core_threshold: 0.2
+  fallback_action_name: utter_default
+- name: FormPolicy
+

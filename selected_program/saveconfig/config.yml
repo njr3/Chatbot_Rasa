@@ -1,0 +1,32 @@
+
+language: "en"
+
+pipeline:                        #this is the pretrained_embeddings_spacy
+- name: "SpacyNLP"
+  model: "en_core_web_md"
+  case_sensitive: 
+- name: "SpacyTokenizer"
+- name: "SpacyFeaturizer"
+  ner_feature_vectors: True        # use word vector on ner_featuring
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
+  max_iterations: 50             # This is the value given to sklearn_crfcuite.CRF tagger before training
+- name: "EntitySynonymMapper"
+- name: "SklearnIntentClassifier"
+  C: [1, 2, 5, 10, 20, 100]      # use grid search
+  kernels: ["linear"]            # defint the kernel ton use 
+
+
+
+
+policies:
+  - name: KerasPolicy
+    epochs: 100
+    max_history: 3
+  - name: MemoizationPolicy
+    max_history: 3
+  - name: FallbackPolicy
+    nlu_threshold: 0.1
+    core_threshold: 0.2
+    fallback_action_name: 'utter_default'
+  - name: FormPolicy

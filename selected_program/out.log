@@ -1,0 +1,20 @@
+2019-12-15 23:10:19,670 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-12-15 23:10:57,919 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-12-15 23:11:05,667 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2019-12-15 23:11:05,698 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/home/joelnteupe/venv/lib/python3.7/site-packages/sanic/server.py", line 860, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
+2019-12-15 23:12:40,765 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-12-15 23:12:48,960 [INFO ]  Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2019-12-15 23:12:51,363 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2019-12-15 23:12:51,364 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/home/joelnteupe/venv/lib/python3.7/site-packages/sanic/server.py", line 860, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+OSError: [Errno 98] error while attempting to bind on address ('0.0.0.0', 5005): address already in use
